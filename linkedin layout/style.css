@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #f3f2ef;
+}
+
+nav {
+    background-color: white;
+    height: 53px;
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid #e7e1e1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 225px 1fr 315px;
+    padding: 20px 10%;
+    gap: 20px;
+
+}
+
+main :is(section) {
+    /* background-color: white; */
+}
+
+
+main aside > * {
+    background-color: white;
+    border-radius: 10px;
+}
+
+main section > * {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #e7e1e1;
+}
+
+#left {
+    display: grid;
+    grid-template-rows: 357px 432px;
+    gap: 10px;
+}
+
+#right {
+    display: grid;
+    grid-template-rows: 374px 394px;
+    gap: 10px;
+}
+
+#timeline {
+    display: grid;
+    grid-template-rows: 116px 1fr;
+    gap: 8px;
+}
+
+#timeline .feeds .post {
+    height: 600px;
+    border-radius: 10px;
+    background-color: black;
+    margin-bottom: 15px;
+}
+
+#left .recents, #right .ads {
+    position: sticky;
+    top: 73px;
+}
